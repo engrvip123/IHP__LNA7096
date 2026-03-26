@@ -1,0 +1,297 @@
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/IHP__LNA7096.sch
+.subckt IHP__LNA7096
+
+x1 net1 net2 net3 net4 net5 net6 net7 net8 top_lna_vmps
+x2 net1 net9 net10 net11 net12 net13 net14 net15 net16 net17 top_lna_vmps_testchip
+.ends
+
+* expanding   symbol:  06_integ/top_lna_vmps.sym # of pins=8
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/top_lna_vmps.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/top_lna_vmps.sch
+.subckt top_lna_vmps vss inp out ctrlpi ctrlni ctrlpq ctrlnq vdd
+*.PININFO vdd:B vss:B inp:B out:B ctrlpi:B ctrlni:B ctrlpq:B ctrlnq:B
+x_pad_inp vdd inp vss pad_io
+x_pad_vss vdd vss vss pad_io
+x_pad_outp vdd out vss pad_io
+x_pad_vdd vdd vdd vss pad_io
+x_pad_ctrlpi vdd ctrlpi vss pad_io
+x_pad_ctrlni vdd ctrlni vss pad_io
+x_pad_ctrlpq vdd ctrlpq vss pad_io
+x1_pad_ctrlnq vdd ctrlnq vss pad_io
+x_pad_inp_gnd1 vdd vss vss pad_io
+x_pad_inp_gnd2 vdd vss vss pad_io
+x_pad_out1 vdd vss vss pad_io
+x_pad_out3 vdd vss vss pad_io
+x1 vdd ctrlpi ctrlpq ctrlnq ctrlni out inp vss lna_plus_vmps_lvs
+x_pad_vdd1 vdd vdd vss pad_io
+DD1 vdd vss nmoscl_4
+DD2 vdd vss nmoscl_4
+DD3 vdd vss nmoscl_4
+DD4 vdd vss nmoscl_4
+DD5 vdd vss nmoscl_4
+DD6 vdd vss nmoscl_4
+DD7 vdd vss nmoscl_4
+DD8 vdd vss nmoscl_4
+DD9 vdd vss nmoscl_4
+x_pad_vdd2 vdd vdd vss pad_io
+x_pad_vdd3 vdd vdd vss pad_io
+x_pad_vdd4 vdd vdd vss pad_io
+.ends
+
+
+* expanding   symbol:  06_integ/top_lna_vmps_testchip.sym # of pins=10
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/top_lna_vmps_testchip.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/top_lna_vmps_testchip.sch
+.subckt top_lna_vmps_testchip vss lna_inp lna_out ctrlpi ctrlni ctrlpq ctrlnq vdd vmps_inp vmps_out
+*.PININFO vdd:B vss:B lna_inp:B lna_out:B ctrlpi:B ctrlni:B ctrlpq:B ctrlnq:B vmps_inp:B vmps_out:B
+x_pad_inp vdd lna_inp vss pad_io
+x_pad_vss vdd vss vss pad_io
+x_pad_outp vdd lna_out vss pad_io
+x_pad_vdd vdd vdd vss pad_io
+x_pad_ctrlpi vdd ctrlpi vss pad_io
+x_pad_ctrlni vdd ctrlni vss pad_io
+x_pad_ctrlpq vdd ctrlpq vss pad_io
+x1_pad_ctrlnq vdd ctrlnq vss pad_io
+x_pad_inp_gnd1 vdd vss vss pad_io
+x_pad_inp_gnd2 vdd vss vss pad_io
+x_pad_out1 vdd vss vss pad_io
+x_pad_out3 vdd vss vss pad_io
+x_pad_vdd1 vdd vdd vss pad_io
+DD1 vdd vss nmoscl_4
+DD2 vdd vss nmoscl_4
+DD3 vdd vss nmoscl_4
+DD4 vdd vss nmoscl_4
+DD5 vdd vss nmoscl_4
+DD6 vdd vss nmoscl_4
+DD7 vdd vss nmoscl_4
+DD8 vdd vss nmoscl_4
+DD9 vdd vss nmoscl_4
+x_pad_inp1 vdd vmps_inp vss pad_io
+x_pad_inp_gnd3 vdd vss vss pad_io
+x_pad_inp_gnd4 vdd vss vss pad_io
+x_pad_inp2 vdd vmps_out vss pad_io
+x_pad_inp_gnd5 vdd vss vss pad_io
+x_pad_inp_gnd6 vdd vss vss pad_io
+x_pad_vdd2 vdd vdd vss pad_io
+x_pad_vdd3 vdd vdd vss pad_io
+x2 lna_inp vmps_out vmps_inp lna_out vdd ctrlpi ctrlpq ctrlnq ctrlni vss lna_vmps_testchip
+.ends
+
+
+* expanding   symbol:  06_integ/pad_io.sym # of pins=3
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/pad_io.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/pad_io.sch
+.subckt pad_io vdd pad vss
+*.PININFO pad:B vdd:B vss:B
+XX3 pad bondpad
+DD1 vdd pad vss diodevdd_2kv
+DD2 vdd pad vss diodevss_2kv
+.ends
+
+
+* expanding   symbol:  06_integ/lna_plus_vmps_lvs.sym # of pins=8
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/lna_plus_vmps_lvs.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/lna_plus_vmps_lvs.sch
+.subckt lna_plus_vmps_lvs vdd ctrlpi ctrlpq ctrlnq ctrlni out inp vss
+*.PININFO vdd:B vss:B inp:B out:B ctrlpi:B ctrlni:B ctrlpq:B ctrlnq:B
+x_lna_for_lvs vdd lna_out inp vss LNA_no_buff
+x1 vdd ctrlpi ctrlni out lna_out ctrlnq ctrlpq vss vmps01
+.ends
+
+
+* expanding   symbol:  06_integ/lna_vmps_testchip.sym # of pins=10
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/lna_vmps_testchip.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/lna_vmps_testchip.sch
+.subckt lna_vmps_testchip lna_inp vmps_out vmps_inp lna_out vdd ctrlpi ctrlpq ctrlnq ctrlni vss
+*.PININFO vdd:B vss:B lna_inp:B vmps_out:B ctrlpi:B ctrlni:B ctrlpq:B ctrlnq:B lna_out:B vmps_inp:B
+x1 vdd ctrlpi ctrlni vmps_out vmps_inp ctrlnq ctrlpq vss vmps01
+x2 vdd lna_out lna_inp vss LNA_with_buff
+.ends
+
+
+* expanding   symbol:  01_lna/LNA_no_buff.sym # of pins=4
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/01_lna/LNA_no_buff.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/01_lna/LNA_no_buff.sch
+.subckt LNA_no_buff vdd out in vss
+*.PININFO vdd:B vss:B in:B out:B
+RR4 net1 n4 14.327k $SUB=vss $[rhigh] w=1e-6 l=10e-6 b=0
+RR5 vdd net1 10.077k $SUB=vss $[rhigh] w=1e-6 l=7e-6 b=0
+CC1 n1 out vss rfcmim w=58e-6 l=59e-6 wfeed=3.0e-6
+MM3 net2 n3 n2 vss rfnmos w=5u l=0.25u ng=1 m=82
+MM5 n1 vdd net2 vss rfnmos w=5u l=0.25u ng=1 m=82
+MM6 net1 net1 vss vss rfnmos w=5u l=0.25u ng=1
+CC2 in n4 vss rfcmim w=64.6e-6 l=62e-6 wfeed=3.0e-6
+LL1 vdd n1 vss inductor w=14e-6 s=2.093e-6 d=469.102e-6 nr_r=4
+LL2 n4 n3 vss inductor w=14e-6 s=2.093e-6 d=469.102e-6 nr_r=4
+LL3 n2 vss vss inductor w=15e-6 s=2.1e-6 d=168e-6 nr_r=2
+.ends
+
+
+* expanding   symbol:  06_integ/vmps01.sym # of pins=8
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/vmps01.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/06_integ/vmps01.sch
+.subckt vmps01 vdd ctrlpi ctrlni out inp ctrlnq ctrlpq vss
+*.PININFO inp:B out:B vdd:B vss:B ctrlpi:B ctrlni:B ctrlpq:B ctrlnq:B
+x_vga_i vdd net1 net2 ctrlni ctrlpi iout_p iout_n vss vga_sch_I
+x_s2d vdd s2d_outp s2d_outn inp vss s2d
+x_sfp vdd s2d_outp sf_outp vss sor_foll
+x_sfn vdd s2d_outn sf_outn vss sor_foll
+x_ppf01 iout_p vss sf_outp qout_p iout_n sf_outn qout_n ppf01
+x_vga_q vdd net1 net2 ctrlnq ctrlpq qout_p qout_n vss vga_sch_I
+RR2 vdd net1 300.7 $SUB=vss $[rppd] w=2e-6 l=2.05e-6 b=0
+RR1 vdd net2 300.7 $SUB=vss $[rppd] w=2e-6 l=2.05e-6 b=0
+x2 vdd d2s_out net1 net2 vss d2s
+x1 vdd d2s_out out_buff vss sor_foll_out
+CC1 out_buff out cap_cmim w=50e-6 l=50e-6 m=2
+.ends
+
+
+* expanding   symbol:  01_lna/LNA_with_buff.sym # of pins=4
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/01_lna/LNA_with_buff.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/01_lna/LNA_with_buff.sch
+.subckt LNA_with_buff vdd out inp vss
+*.PININFO vdd:B vss:B inp:B out:B
+RR1 n5 vss 62.21k $SUB=vss $[rhigh] w=1e-6 l=43.8e-6 b=0
+RR2 vdd n5 7.2433k $SUB=vss $[rhigh] w=1e-6 l=5e-6 b=0
+RR3 vdd n8 25.66k $SUB=vss $[rhigh] w=1e-6 l=18e-6 b=0
+RR4 bias n4 14.327k $SUB=vss $[rhigh] w=1e-6 l=10e-6 b=0
+RR5 vdd bias 10.077k $SUB=vss $[rhigh] w=1e-6 l=7e-6 b=0
+CC1 n1 n5 vss rfcmim w=58e-6 l=59e-6 wfeed=3.0e-6
+CC3 n6 out vss rfcmim w=58e-6 l=57.5e-6 wfeed=3.0e-6
+CC2 inp n4 vss rfcmim w=64.6e-6 l=62e-6 wfeed=3.0e-6
+CC4 n6 out vss rfcmim w=58e-6 l=57.5e-6 wfeed=3.0e-6
+LL1 vdd n1 vss inductor w=14e-6 s=2e-6 d=469e-6 nr_r=4
+LL4 n2 vss vss inductor w=15e-6 s=2e-6 d=168e-6 nr_r=2
+LL2 n4 n3 vss inductor w=14e-6 s=2e-6 d=469e-6 nr_r=4
+MM5 n1 vdd n9 vss rfnmos w=410u l=0.25u ng=82
+MM3 n9 n3 n2 vss rfnmos w=410u l=0.25u ng=82
+MM2 n8 n8 vss vss rfnmos w=5u l=0.25u ng=1
+MM4 n6 n8 vss vss rfnmos w=85.925u l=0.25u ng=35
+MM1 vdd n5 n6 n6 rfnmos w=160u l=0.25u ng=20
+MM6 bias bias vss vss rfnmos w=5u l=0.25u ng=1
+D1 n6 vdd vss isolbox l=15u w=19u
+.ends
+
+
+* expanding   symbol:  05_vga/vga_sch_I.sym # of pins=8
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/05_vga/vga_sch_I.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/05_vga/vga_sch_I.sch
+.subckt vga_sch_I vdd outp outn ctrln ctrlp inp inn vss
+*.PININFO vdd:B vss:B inp:B outp:B outn:B ctrlp:B ctrln:B inn:B
+RR7 vdd a4 22.416k $SUB=vss $[rhigh] w=1e-6 l=15.71e-6 b=0
+RR1 a3 vss 19.285k $SUB=vss $[rhigh] w=1e-6 l=13.5e-6 b=0
+RR2 vdd a3 22.416k $SUB=vss $[rhigh] w=1e-6 l=15.71e-6 b=0
+RR10 vdd a2 20.291k $SUB=vss $[rhigh] w=1e-6 l=14.21e-6 b=0
+RR12 a1 vss 63.627k $SUB=vss $[rhigh] w=1e-6 l=44.8e-6 b=0
+RR13 a1 vdd 20.291k $SUB=vss $[rhigh] w=1e-6 l=14.21e-6 b=0
+CC4 inp inp_b cap_cmim w=46.85e-6 l=46.85e-6 m=4
+RR14 a1 inp_b 49.885k $SUB=vss $[rhigh] w=1e-6 l=35.1e-6 b=0
+RR18 bias_p vss 1.6475k $SUB=vss $[rhigh] w=1e-6 l=1.05e-6 b=0
+CC2 inn inn_b cap_cmim w=46.85e-6 l=46.85e-6 m=4
+CC11 inp inp_a cap_cmim w=46.85e-6 l=46.85e-6 m=4
+CC1 inn inn_a cap_cmim w=46.85e-6 l=46.85e-6 m=4
+MM2 bias_p bias_p vdd vdd sg13_lv_pmos w=49.98u l=0.3u ng=20
+MM1 n3 bias_p vdd vdd sg13_lv_pmos w=700u l=0.3u ng=100
+MM3 n1 ctrlp n3 n3 sg13_lv_pmos w=150u l=0.3u ng=20
+MM4 n2 ctrln n3 n3 sg13_lv_pmos w=150u l=0.3u ng=20
+MM5 outp inp_b n1 net1 sg13_lv_nmos w=120u l=0.25u ng=20
+MM6 outn inn_b n1 net2 sg13_lv_nmos w=120u l=0.25u ng=20
+MM7 outn inp_b n2 net4 sg13_lv_nmos w=120u l=0.25u ng=20
+MM8 outp inn_b n2 net3 sg13_lv_nmos w=120u l=0.25u ng=20
+MM9 n1 inp_a vss vss sg13_lv_nmos w=40u l=0.25u ng=10
+MM10 n1 inn_a vss vss sg13_lv_nmos w=40u l=0.25u ng=10
+MM11 n2 inn_a vss vss sg13_lv_nmos w=40u l=0.25u ng=10
+MM12 n2 inp_a vss vss sg13_lv_nmos w=40u l=0.25u ng=10
+D4 net2 vdd vss isolbox l=24.12u w=10u
+D5 net1 vdd vss isolbox l=24.12u w=10u
+RR22 n1 net1 ptap1 A=1.56e-12 P=8.78e-06
+RR15 n1 net2 ptap1 A=1.56e-12 P=8.78e-06
+D3 net4 vdd vss isolbox l=24.12u w=10u
+D6 net3 vdd vss isolbox l=24.12u w=10u
+RR16 n2 net3 ptap1 A=1.56e-12 P=8.78e-06
+RR23 n2 net4 ptap1 A=1.56e-12 P=8.78e-06
+RR4 a2 vss 63.627k $SUB=vss $[rhigh] w=1e-6 l=44.8e-6 b=0
+RR5 a2 inn_b 49.885k $SUB=vss $[rhigh] w=1e-6 l=35.1e-6 b=0
+RR6 a4 vss 19.285k $SUB=vss $[rhigh] w=1e-6 l=13.5e-6 b=0
+RR3 a3 inp_a 49.885k $SUB=vss $[rhigh] w=1e-6 l=35.1e-6 b=0
+RR8 a4 inn_a 49.885k $SUB=vss $[rhigh] w=1e-6 l=35.1e-6 b=0
+.ends
+
+
+* expanding   symbol:  02_s2d/s2d.sym # of pins=5
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/02_s2d/s2d.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/02_s2d/s2d.sch
+.subckt s2d vdd outp outn inp vss
+*.PININFO vdd:B vss:B outp:B outn:B inp:B
+RR3 vdd outp 400.5 $SUB=vss $[rppd] w=2e-6 l=2.82e-6 b=0
+RR1 vdd outn 242.38 $SUB=vss $[rppd] w=2e-6 l=1.60e-6 b=0
+RR2 inp vss 680.46 $SUB=vss $[rppd] w=2e-6 l=4.98e-6 b=0
+MM2 outp vdd inp net1 sg13_lv_nmos w=120u l=0.15u ng=20
+MM3 outn inp vss vss sg13_lv_nmos w=33u l=0.15u ng=10
+D5 net1 vdd vss isolbox l=15u w=10u
+RR22 inp net1 ptap1 A=2.535e-12 P=1.378e-05
+.ends
+
+
+* expanding   symbol:  03_sor_foll/sor_foll.sym # of pins=4
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/03_sor_foll/sor_foll.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/03_sor_foll/sor_foll.sch
+.subckt sor_foll vdd inp out vss
+*.PININFO vdd:B vss:B inp:B out:B
+RR3 vdd n8 7.2433k $SUB=vss $[rhigh] w=1e-6 l=5e-6 b=0
+MM3 out n8 vss vss sg13_lv_nmos w=85.925u l=0.25u ng=35
+MM2 n8 n8 vss vss sg13_lv_nmos w=5u l=0.25u ng=1
+MM1 vdd inp out net1 sg13_lv_nmos w=159.84u l=0.25u ng=20
+D1 net1 vdd vss isolbox l=29.14u w=10.735u
+RR1 out net1 ptap1 A=2.808e-12 P=1.518e-05
+.ends
+
+
+* expanding   symbol:  04_iq_ppf/ppf01.sym # of pins=7
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/04_iq_ppf/ppf01.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/04_iq_ppf/ppf01.sch
+.subckt ppf01 iout_p vss inp qout_p iout_n inn qout_n
+*.PININFO inp:B inn:B iout_p:B qout_p:B iout_n:B qout_n:B vss:B
+RR5 inp iout_p 500.3 $SUB=vss $[rppd] w=2e-6 l=3.59e-6 b=0
+RR1 inp qout_p 500.3 $SUB=vss $[rppd] w=2e-6 l=3.59e-6 b=0
+RR2 inn iout_n 500.3 $SUB=vss $[rppd] w=2e-6 l=3.59e-6 b=0
+RR3 inn qout_n 500.3 $SUB=vss $[rppd] w=2e-6 l=3.59e-6 b=0
+CC5 inp iout_p vss rfcmim w=12.99e-6 l=12.99e-6 wfeed=3.0e-6
+CC1 inn qout_p vss rfcmim w=12.99e-6 l=12.99e-6 wfeed=3.0e-6
+CC2 inn iout_n vss rfcmim w=12.99e-6 l=12.99e-6 wfeed=3.0e-6
+CC3 inp qout_n vss rfcmim w=12.99e-6 l=12.99e-6 wfeed=3.0e-6
+.ends
+
+
+* expanding   symbol:  05a_d2s/d2s.sym # of pins=5
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/05a_d2s/d2s.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/05a_d2s/d2s.sch
+.subckt d2s vdd out inp inn vss
+*.PININFO vdd:B vss:B out:B inp:B inn:B
+RR3 vdd out1 232.01 $SUB=vss $[rppd] w=2e-6 l=1.52e-6 b=0
+RR1 vdd out 232.01 $SUB=vss $[rppd] w=2e-6 l=1.52e-6 b=0
+MM2 out1 inp n1 net1 sg13_lv_nmos w=100u l=0.15u ng=20
+D5 net1 vdd vss isolbox l=15u w=10u
+RR22 n1 net1 ptap1 A=2.34e-12 P=1.278e-05
+MM5 n1 bias vss vss sg13_lv_nmos w=130u l=0.15u ng=40
+MM1 out inn n1 net2 sg13_lv_nmos w=100u l=0.15u ng=20
+D1 net2 vdd vss isolbox l=15u w=10u
+RR2 n1 net2 ptap1 A=2.34e-12 P=1.278e-05
+MM3 bias bias vss vss sg13_lv_nmos w=5u l=0.15u ng=2
+RR4 vdd bias 6.2728k $SUB=vss $[rppd] w=1e-6 l=24e-6 b=0
+.ends
+
+
+* expanding   symbol:  03_sor_foll/sor_foll_out.sym # of pins=4
+** sym_path: /home/ic_design_trg/lna_ihp/xschem/03_sor_foll/sor_foll_out.sym
+** sch_path: /home/ic_design_trg/lna_ihp/xschem/03_sor_foll/sor_foll_out.sch
+.subckt sor_foll_out vdd inp out vss
+*.PININFO vdd:B vss:B inp:B out:B
+RR3 vdd n8 7.2433k $SUB=vss $[rhigh] w=1e-6 l=5e-6 b=0
+MM3 out n8 vss vss sg13_lv_nmos w=85.925u l=0.25u ng=35
+MM2 n8 n8 vss vss sg13_lv_nmos w=5u l=0.25u ng=1
+MM1 vdd inp out net1 sg13_lv_nmos w=184.86u l=0.25u ng=20
+D1 net1 vdd vss isolbox l=29.14u w=10.735u
+RR1 out net1 ptap1 A=2.73e-12 P=1.478e-05
+.ends
+

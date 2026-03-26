@@ -1,0 +1,18 @@
+26-Mar-2026 13:15:19 | INFO    | Your Klayout version is: KLayout 0.30.5
+26-Mar-2026 13:15:19 | INFO    | Running SG13G2 LVS checks on design /home/ic_design_trg/IHP__LNA7096/LNA7096-main/layout/klayout/IHP__LNA7096.gds on cell IHP__LNA7096
+26-Mar-2026 13:16:53 | INFO    | ==============================================================================
+26-Mar-2026 13:16:53 | INFO    | Important Summary
+26-Mar-2026 13:16:53 | INFO    | +------------------+----------------------------------------------------------------+
+26-Mar-2026 13:16:53 | INFO    | | Status           | FAIL                                                           |
+26-Mar-2026 13:16:53 | INFO    | | Mode             | COMPARE                                                        |
+26-Mar-2026 13:16:53 | INFO    | | Outcome          | Comparison mode: FAIL (netlists do not match).                 |
+26-Mar-2026 13:16:53 | INFO    | | Layout           | IHP__LNA7096.gds                                               |
+26-Mar-2026 13:16:53 | INFO    | | Top Cell         | IHP__LNA7096                                                   |
+26-Mar-2026 13:16:53 | INFO    | | Results Dir      | /home/ic_design_trg/IHP__LNA7096/LNA7096-main/verification/lvs |
+26-Mar-2026 13:16:53 | INFO    | | Warnings         | 0                                                              |
+26-Mar-2026 13:16:53 | INFO    | | Errors           | 1                                                              |
+26-Mar-2026 13:16:53 | INFO    | | Run Time (s)     | 93.916                                                         |
+26-Mar-2026 13:16:53 | INFO    | +------------------+----------------------------------------------------------------+
+26-Mar-2026 13:16:53 | ERROR   | Key errors:
+26-Mar-2026 13:16:53 | ERROR   |   - 2026-03-26 13:16:52 +0530: Memory Usage (3402404K) : ERROR : Netlists don't match
+26-Mar-2026 13:16:53 | INFO    | ==============================================================================

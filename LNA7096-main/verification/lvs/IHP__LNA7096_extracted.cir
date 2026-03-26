@@ -1,0 +1,408 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 26/03/2026 13:15
+
+.SUBCKT IHP__LNA7096 LA|vdd LA|vss out ctrln|ctrlni out|out_buff inp_b inp_b$1
++ n2 n2$1 inn|outn bias_p n3 bias_p$1 n3$1 inp|out inp_a inp_a$1 inn_b inp|outp
++ inn_b$1 inn_a inn_a$1 n1 n1$1 ctrlp|ctrlpi inn|qout_n inp|qout_p inn|iout_n
++ inp|iout_p a2 a2$1 a4 a3 a1 a4$1 a3$1 a1$1 ctrln|ctrlnq inp|out$1 inn|out
++ inp|outn inp|outp$1 LB|n1 inp|out$2 LA|n4 inp ctrlp|ctrlpq LB|n2|n9 LB|n3 n9
++ bias LA|vdd$1 out|vmps_out ctrln|ctrlni$1 ctrlp|ctrlpi$1 ctrln|ctrlnq$1
++ ctrlp|ctrlpq$1 out|out_buff$1 inp_b$2 inp_b$3 n2$2 inn|outn$1 n2$3 bias_p$2
++ n3$2 bias_p$3 n3$3 inp|out$3 inp_a$2 inp_a$3 inp|outp$2 inn_b$2 inn_b$3
++ inn_a$2 inn_a$3 n1$2 n1$3 inp|vmps_inp inn|qout_n$1 inp|qout_p$1 inn|iout_n$1
++ inp|iout_p$1 a4$2 a2$2 a1$2 a4$3 a2$3 a1$3 a3$2 a3$3 inp|out$4 inn|out$1
++ inp|outn$1 inp|outp$3 LB|n1$1 LA|n4$1 inp|lna_inp LB|n2|n9$1 LB|n3$1 n9$1
++ bias$1 lna_out|out
+M$1 n2 inp_b inn|outn \$96811 sg13_lv_nmos L=0.25u W=120u AS=23.4p AD=23.4p
++ PS=135.7u PD=135.7u rfmode=0
+M$31 n2$1 inp_b$1 inn|outn \$96813 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$61 out|out_buff \$103194 LA|vss LA|vss sg13_lv_nmos L=0.25u W=85.925u
++ AS=16.694p AD=16.694p PS=101.98u PD=101.98u rfmode=0
+M$96 LA|vdd inp|out out|out_buff \$102128 sg13_lv_nmos L=0.25u W=184.86u
++ AS=35.89365p AD=35.89365p PS=203.975u PD=203.975u rfmode=0
+M$132 LA|vss inp_a n2 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$142 LA|vss inp_a$1 n2$1 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$152 n2 inn_b inp|outp \$108980 sg13_lv_nmos L=0.25u W=120u AS=23.4p AD=23.4p
++ PS=135.7u PD=135.7u rfmode=0
+M$182 n2$1 inn_b$1 inp|outp \$108981 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$212 LA|vss inn_a n2 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$222 LA|vss inn_a$1 n2$1 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$232 \$103194 \$103194 LA|vss LA|vss sg13_lv_nmos L=0.25u W=5u AS=1.325p
++ AD=1.325p PS=8.56u PD=8.56u rfmode=0
+M$234 LA|vss \$117188 \$117187 LA|vss sg13_lv_nmos L=0.15u W=130u AS=25.1875p
++ AD=25.1875p PS=148.75u PD=148.75u rfmode=0
+M$274 \$117187 inn|outn inp|out \$117189 sg13_lv_nmos L=0.15u W=100u AS=19.75p
++ AD=19.75p PS=112.9u PD=112.9u rfmode=0
+M$294 n1 inn_b inn|outn \$123201 sg13_lv_nmos L=0.25u W=120u AS=23.4p AD=23.4p
++ PS=135.7u PD=135.7u rfmode=0
+M$324 n1$1 inn_b$1 inn|outn \$123202 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$354 LA|vss \$117188 \$117188 LA|vss sg13_lv_nmos L=0.15u W=5u AS=1.325p
++ AD=1.325p PS=8.56u PD=8.56u rfmode=0
+M$356 \$117187 inp|outp \$126716 \$125580 sg13_lv_nmos L=0.15u W=100u AS=19.75p
++ AD=19.75p PS=112.9u PD=112.9u rfmode=0
+M$376 LA|vss inn_a n1 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$386 LA|vss inn_a$1 n1$1 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$396 LA|vss inp_a$1 n1$1 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$406 LA|vss inp_a n1 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$416 n1 inp_b inp|outp \$134656 sg13_lv_nmos L=0.25u W=120u AS=23.4p AD=23.4p
++ PS=135.7u PD=135.7u rfmode=0
+M$446 n1$1 inp_b$1 inp|outp \$134657 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$476 inn|out \$214942 LA|vss LA|vss sg13_lv_nmos L=0.25u W=85.925u AS=16.694p
++ AD=16.694p PS=101.98u PD=101.98u rfmode=0
+M$511 LA|vdd inp|outn inn|out \$214481 sg13_lv_nmos L=0.25u W=159.84u
++ AS=31.0356p AD=31.0356p PS=178.26u PD=178.26u rfmode=0
+M$547 inp|out$1 \$214944 LA|vss LA|vss sg13_lv_nmos L=0.25u W=85.925u
++ AS=16.694p AD=16.694p PS=101.98u PD=101.98u rfmode=0
+M$582 LA|vdd inp|outp$1 inp|out$1 \$214482 sg13_lv_nmos L=0.25u W=159.84u
++ AS=31.0356p AD=31.0356p PS=178.26u PD=178.26u rfmode=0
+M$618 \$214942 \$214942 LA|vss LA|vss sg13_lv_nmos L=0.25u W=5u AS=1.7p AD=1.7p
++ PS=10.68u PD=10.68u rfmode=0
+M$619 \$214944 \$214944 LA|vss LA|vss sg13_lv_nmos L=0.25u W=5u AS=1.7p AD=1.7p
++ PS=10.68u PD=10.68u rfmode=0
+M$620 inp|outn inp|out$2 LA|vss LA|vss sg13_lv_nmos L=0.15u W=33u AS=6.5175p
++ AD=6.5175p PS=42.55u PD=42.55u rfmode=0
+M$640 inp|outp$1 LA|vdd inp|out$2 \$230150 sg13_lv_nmos L=0.15u W=120u AS=23.7p
++ AD=23.7p PS=133.9u PD=133.9u rfmode=0
+M$660 n2$3 inp_b$3 inn|outn$1 \$596725 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$690 n2$2 inp_b$2 inn|outn$1 \$596723 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$720 out|out_buff$1 \$603049 LA|vss LA|vss sg13_lv_nmos L=0.25u W=85.925u
++ AS=16.694p AD=16.694p PS=101.98u PD=101.98u rfmode=0
+M$755 LA|vdd$1 inp|out$3 out|out_buff$1 \$602870 sg13_lv_nmos L=0.25u W=184.86u
++ AS=35.89365p AD=35.89365p PS=203.975u PD=203.975u rfmode=0
+M$791 LA|vss inp_a$2 n2$2 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$801 LA|vss inp_a$3 n2$3 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$811 n2$3 inn_b$3 inp|outp$2 \$608853 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$841 n2$2 inn_b$2 inp|outp$2 \$608852 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$871 LA|vss inn_a$2 n2$2 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$881 LA|vss inn_a$3 n2$3 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$891 \$603049 \$603049 LA|vss LA|vss sg13_lv_nmos L=0.25u W=5u AS=1.325p
++ AD=1.325p PS=8.56u PD=8.56u rfmode=0
+M$893 LA|vss \$616897 \$616896 LA|vss sg13_lv_nmos L=0.15u W=130u AS=25.1875p
++ AD=25.1875p PS=148.75u PD=148.75u rfmode=0
+M$933 \$616896 inn|outn$1 inp|out$3 \$616898 sg13_lv_nmos L=0.15u W=100u
++ AS=19.75p AD=19.75p PS=112.9u PD=112.9u rfmode=0
+M$953 n1$3 inn_b$3 inn|outn$1 \$623826 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$983 n1$2 inn_b$2 inn|outn$1 \$624361 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$1013 LA|vss \$616897 \$616897 LA|vss sg13_lv_nmos L=0.15u W=5u AS=1.325p
++ AD=1.325p PS=8.56u PD=8.56u rfmode=0
+M$1015 \$616896 inp|outp$2 \$625409 \$625549 sg13_lv_nmos L=0.15u W=100u
++ AS=19.75p AD=19.75p PS=112.9u PD=112.9u rfmode=0
+M$1035 LA|vss inn_a$3 n1$3 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$1045 LA|vss inn_a$2 n1$2 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$1055 LA|vss inp_a$2 n1$2 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$1065 LA|vss inp_a$3 n1$3 LA|vss sg13_lv_nmos L=0.25u W=40u AS=8.2p AD=8.2p
++ PS=48.1u PD=48.1u rfmode=0
+M$1075 n1$3 inp_b$3 inp|outp$2 \$635003 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$1105 n1$2 inp_b$2 inp|outp$2 \$635002 sg13_lv_nmos L=0.25u W=120u AS=23.4p
++ AD=23.4p PS=135.7u PD=135.7u rfmode=0
+M$1135 LA|vdd$1 inp|outn$1 inn|out$1 \$714619 sg13_lv_nmos L=0.25u W=159.84u
++ AS=31.0356p AD=31.0356p PS=178.26u PD=178.26u rfmode=0
+M$1171 LA|vdd$1 inp|outp$3 inp|out$4 \$714620 sg13_lv_nmos L=0.25u W=159.84u
++ AS=31.0356p AD=31.0356p PS=178.26u PD=178.26u rfmode=0
+M$1207 inn|out$1 \$716703 LA|vss LA|vss sg13_lv_nmos L=0.25u W=85.925u
++ AS=16.694p AD=16.694p PS=101.98u PD=101.98u rfmode=0
+M$1242 inp|out$4 \$716705 LA|vss LA|vss sg13_lv_nmos L=0.25u W=85.925u
++ AS=16.694p AD=16.694p PS=101.98u PD=101.98u rfmode=0
+M$1277 \$716703 \$716703 LA|vss LA|vss sg13_lv_nmos L=0.25u W=5u AS=1.7p
++ AD=1.7p PS=10.68u PD=10.68u rfmode=0
+M$1278 \$716705 \$716705 LA|vss LA|vss sg13_lv_nmos L=0.25u W=5u AS=1.7p
++ AD=1.7p PS=10.68u PD=10.68u rfmode=0
+M$1279 inp|outn$1 inp|vmps_inp LA|vss LA|vss sg13_lv_nmos L=0.15u W=33u
++ AS=6.5175p AD=6.5175p PS=42.55u PD=42.55u rfmode=0
+M$1299 inp|outp$3 LA|vdd$1 inp|vmps_inp \$729851 sg13_lv_nmos L=0.15u W=120u
++ AS=23.7p AD=23.7p PS=133.9u PD=133.9u rfmode=0
+M$1319 LA|vdd bias_p n3 LA|vdd sg13_lv_pmos L=0.3u W=700u AS=134.05p AD=134.05p
++ PS=745.3u PD=745.3u rfmode=0
+M$1419 LA|vdd bias_p$1 n3$1 LA|vdd sg13_lv_pmos L=0.3u W=700u AS=134.05p
++ AD=134.05p PS=745.3u PD=745.3u rfmode=0
+M$1519 n2 ctrln|ctrlnq n3 n3 sg13_lv_pmos L=0.3u W=150u AS=29.625p AD=29.625p
++ PS=165.4u PD=165.4u rfmode=0
+M$1539 n2$1 ctrln|ctrlni n3$1 n3$1 sg13_lv_pmos L=0.3u W=150u AS=29.625p
++ AD=29.625p PS=165.4u PD=165.4u rfmode=0
+M$1559 n3 ctrlp|ctrlpq n1 n3 sg13_lv_pmos L=0.3u W=150u AS=29.625p AD=29.625p
++ PS=165.4u PD=165.4u rfmode=0
+M$1579 n3$1 ctrlp|ctrlpi n1$1 n3$1 sg13_lv_pmos L=0.3u W=150u AS=29.625p
++ AD=29.625p PS=165.4u PD=165.4u rfmode=0
+M$1599 bias_p$1 bias_p$1 LA|vdd LA|vdd sg13_lv_pmos L=0.3u W=49.98u AS=10.5672p
++ AD=10.5672p PS=60.08u PD=60.08u rfmode=0
+M$1606 bias_p bias_p LA|vdd LA|vdd sg13_lv_pmos L=0.3u W=49.98u AS=10.5672p
++ AD=10.5672p PS=60.08u PD=60.08u rfmode=0
+M$1613 LA|vdd$1 bias_p$3 n3$3 LA|vdd$1 sg13_lv_pmos L=0.3u W=700u AS=134.05p
++ AD=134.05p PS=745.3u PD=745.3u rfmode=0
+M$1713 LA|vdd$1 bias_p$2 n3$2 LA|vdd$1 sg13_lv_pmos L=0.3u W=700u AS=134.05p
++ AD=134.05p PS=745.3u PD=745.3u rfmode=0
+M$1813 n2$2 ctrln|ctrlnq$1 n3$2 n3$2 sg13_lv_pmos L=0.3u W=150u AS=29.625p
++ AD=29.625p PS=165.4u PD=165.4u rfmode=0
+M$1833 n2$3 ctrln|ctrlni$1 n3$3 n3$3 sg13_lv_pmos L=0.3u W=150u AS=29.625p
++ AD=29.625p PS=165.4u PD=165.4u rfmode=0
+M$1853 n3$2 ctrlp|ctrlpq$1 n1$2 n3$2 sg13_lv_pmos L=0.3u W=150u AS=29.625p
++ AD=29.625p PS=165.4u PD=165.4u rfmode=0
+M$1873 n3$3 ctrlp|ctrlpi$1 n1$3 n3$3 sg13_lv_pmos L=0.3u W=150u AS=29.625p
++ AD=29.625p PS=165.4u PD=165.4u rfmode=0
+M$1893 bias_p$3 bias_p$3 LA|vdd$1 LA|vdd$1 sg13_lv_pmos L=0.3u W=49.98u
++ AS=10.5672p AD=10.5672p PS=60.08u PD=60.08u rfmode=0
+M$1900 bias_p$2 bias_p$2 LA|vdd$1 LA|vdd$1 sg13_lv_pmos L=0.3u W=49.98u
++ AS=10.5672p AD=10.5672p PS=60.08u PD=60.08u rfmode=0
+D$2237 \$96813 LA|vdd LA|vss isolbox a=241.2p p=68.24u
+D$2238 \$96811 LA|vdd LA|vss isolbox a=241.2p p=68.24u
+D$2239 \$102128 LA|vdd LA|vss isolbox a=312.8179p p=79.75u
+D$2240 \$108981 LA|vdd LA|vss isolbox a=241.2p p=68.24u
+D$2241 \$108980 LA|vdd LA|vss isolbox a=241.2p p=68.24u
+D$2242 \$117189 LA|vdd LA|vss isolbox a=150p p=50u
+D$2243 \$125580 LA|vdd LA|vss isolbox a=150p p=50u
+D$2244 \$123202 LA|vdd LA|vss isolbox a=241.2p p=68.24u
+D$2245 \$123201 LA|vdd LA|vss isolbox a=241.2p p=68.24u
+D$2246 \$134657 LA|vdd LA|vss isolbox a=241.2p p=68.24u
+D$2247 \$134656 LA|vdd LA|vss isolbox a=241.2p p=68.24u
+D$2248 \$214481 LA|vdd LA|vss isolbox a=312.8179p p=79.75u
+D$2249 \$214482 LA|vdd LA|vss isolbox a=312.8179p p=79.75u
+D$2250 \$230150 LA|vdd LA|vss isolbox a=150p p=50u
+D$2251 \$596725 LA|vdd$1 LA|vss isolbox a=241.2p p=68.24u
+D$2252 \$596723 LA|vdd$1 LA|vss isolbox a=241.2p p=68.24u
+D$2253 \$602870 LA|vdd$1 LA|vss isolbox a=312.8179p p=79.75u
+D$2254 \$608853 LA|vdd$1 LA|vss isolbox a=241.2p p=68.24u
+D$2255 \$608852 LA|vdd$1 LA|vss isolbox a=241.2p p=68.24u
+D$2256 \$616898 LA|vdd$1 LA|vss isolbox a=150p p=50u
+D$2257 \$625549 LA|vdd$1 LA|vss isolbox a=150p p=50u
+D$2258 \$623826 LA|vdd$1 LA|vss isolbox a=241.2p p=68.24u
+D$2259 \$624361 LA|vdd$1 LA|vss isolbox a=241.2p p=68.24u
+D$2260 \$635003 LA|vdd$1 LA|vss isolbox a=241.2p p=68.24u
+D$2261 \$635002 LA|vdd$1 LA|vss isolbox a=241.2p p=68.24u
+D$2262 \$714619 LA|vdd$1 LA|vss isolbox a=312.8179p p=79.75u
+D$2263 \$714620 LA|vdd$1 LA|vss isolbox a=312.8179p p=79.75u
+D$2264 \$729851 LA|vdd$1 LA|vss isolbox a=150p p=50u
+R$2265 inp|outp LA|vdd LA|vss rppd w=2u l=2.05u ps=0u b=0 m=1
+R$2266 inn|outn LA|vdd LA|vss rppd w=2u l=2.05u ps=0u b=0 m=1
+R$2267 inp|out LA|vdd LA|vss rppd w=2u l=1.52u ps=0u b=0 m=1
+R$2268 \$126716 LA|vdd LA|vss rppd w=2u l=1.52u ps=0u b=0 m=1
+R$2274 \$117188 LA|vdd LA|vss rppd w=1u l=24u ps=0u b=0 m=1
+R$2275 inn|qout_n inn|out LA|vss rppd w=2u l=3.59u ps=0u b=0 m=1
+R$2276 inn|iout_n inn|out LA|vss rppd w=2u l=3.59u ps=0u b=0 m=1
+R$2277 inp|qout_p inp|out$1 LA|vss rppd w=2u l=3.59u ps=0u b=0 m=1
+R$2278 inp|iout_p inp|out$1 LA|vss rppd w=2u l=3.59u ps=0u b=0 m=1
+R$2279 LA|vss inp|out$2 LA|vss rppd w=2u l=4.98u ps=0u b=0 m=1
+R$2280 inp|outn LA|vdd LA|vss rppd w=2u l=1.6u ps=0u b=0 m=1
+R$2281 inp|outp$1 LA|vdd LA|vss rppd w=2u l=2.82u ps=0u b=0 m=1
+R$2282 inp|outp$2 LA|vdd$1 LA|vss rppd w=2u l=2.05u ps=0u b=0 m=1
+R$2283 inn|outn$1 LA|vdd$1 LA|vss rppd w=2u l=2.05u ps=0u b=0 m=1
+R$2284 inp|out$3 LA|vdd$1 LA|vss rppd w=2u l=1.52u ps=0u b=0 m=1
+R$2285 \$625409 LA|vdd$1 LA|vss rppd w=2u l=1.52u ps=0u b=0 m=1
+R$2291 \$616897 LA|vdd$1 LA|vss rppd w=1u l=24u ps=0u b=0 m=1
+R$2292 inn|qout_n$1 inn|out$1 LA|vss rppd w=2u l=3.59u ps=0u b=0 m=1
+R$2293 inn|iout_n$1 inn|out$1 LA|vss rppd w=2u l=3.59u ps=0u b=0 m=1
+R$2294 inp|qout_p$1 inp|out$4 LA|vss rppd w=2u l=3.59u ps=0u b=0 m=1
+R$2295 inp|iout_p$1 inp|out$4 LA|vss rppd w=2u l=3.59u ps=0u b=0 m=1
+R$2296 LA|vss inp|vmps_inp LA|vss rppd w=2u l=4.98u ps=0u b=0 m=1
+R$2297 inp|outn$1 LA|vdd$1 LA|vss rppd w=2u l=1.6u ps=0u b=0 m=1
+R$2298 inp|outp$3 LA|vdd$1 LA|vss rppd w=2u l=2.82u ps=0u b=0 m=1
+R$2299 \$103194 LA|vdd LA|vss rhigh w=1u l=5u ps=0u b=0 m=1
+R$2300 LA|vss bias_p$1 LA|vss rhigh w=1u l=1.05u ps=0u b=0 m=1
+R$2301 LA|vss bias_p LA|vss rhigh w=1u l=1.05u ps=0u b=0 m=1
+R$2313 inp_b a1 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2316 inn_b$1 a2$1 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2317 inp_b$1 a1$1 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2318 a4 inn_a LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2319 a3 inp_a LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2320 a2 inn_b LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2322 a4$1 inn_a$1 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2323 a3$1 inp_a$1 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2341 LA|vss a4$1 LA|vss rhigh w=1u l=13.5u ps=0u b=0 m=1
+R$2344 a4 LA|vss LA|vss rhigh w=1u l=13.5u ps=0u b=0 m=1
+R$2345 a3 LA|vss LA|vss rhigh w=1u l=13.5u ps=0u b=0 m=1
+R$2348 a3$1 LA|vss LA|vss rhigh w=1u l=13.5u ps=0u b=0 m=1
+R$2350 a2 LA|vss LA|vss rhigh w=1u l=44.8u ps=0u b=0 m=1
+R$2351 a1 LA|vss LA|vss rhigh w=1u l=44.8u ps=0u b=0 m=1
+R$2352 a2$1 LA|vss LA|vss rhigh w=1u l=44.8u ps=0u b=0 m=1
+R$2353 a1$1 LA|vss LA|vss rhigh w=1u l=44.8u ps=0u b=0 m=1
+R$2354 a4 LA|vdd LA|vss rhigh w=1u l=15.71u ps=0u b=0 m=1
+R$2355 a3 LA|vdd LA|vss rhigh w=1u l=15.71u ps=0u b=0 m=1
+R$2356 a2 LA|vdd LA|vss rhigh w=1u l=14.21u ps=0u b=0 m=1
+R$2357 a1 LA|vdd LA|vss rhigh w=1u l=14.21u ps=0u b=0 m=1
+R$2358 a4$1 LA|vdd LA|vss rhigh w=1u l=15.71u ps=0u b=0 m=1
+R$2359 a3$1 LA|vdd LA|vss rhigh w=1u l=15.71u ps=0u b=0 m=1
+R$2360 a2$1 LA|vdd LA|vss rhigh w=1u l=14.21u ps=0u b=0 m=1
+R$2361 a1$1 LA|vdd LA|vss rhigh w=1u l=14.21u ps=0u b=0 m=1
+R$2362 LA|n4 bias LA|vss rhigh w=1u l=10u ps=0u b=0 m=1
+R$2363 bias LA|vdd LA|vss rhigh w=1u l=7u ps=0u b=0 m=1
+R$2364 \$603049 LA|vdd$1 LA|vss rhigh w=1u l=5u ps=0u b=0 m=1
+R$2365 \$214942 LA|vdd LA|vss rhigh w=1u l=5u ps=0u b=0 m=1
+R$2366 \$214944 LA|vdd LA|vss rhigh w=1u l=5u ps=0u b=0 m=1
+R$2367 LA|vss bias_p$3 LA|vss rhigh w=1u l=1.05u ps=0u b=0 m=1
+R$2368 LA|vss bias_p$2 LA|vss rhigh w=1u l=1.05u ps=0u b=0 m=1
+R$2382 inp_a$3 a3$3 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2385 a4$2 inn_a$2 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2386 a3$2 inp_a$2 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2387 a2$2 inn_b$2 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2388 a1$2 inp_b$2 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2389 a4$3 inn_a$3 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2391 a2$3 inn_b$3 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2392 a1$3 inp_b$3 LA|vss rhigh w=1u l=35.1u ps=0u b=0 m=1
+R$2407 LA|vss a2$2 LA|vss rhigh w=1u l=44.8u ps=0u b=0 m=1
+R$2410 LA|vss a2$3 LA|vss rhigh w=1u l=44.8u ps=0u b=0 m=1
+R$2411 a4$2 LA|vss LA|vss rhigh w=1u l=13.5u ps=0u b=0 m=1
+R$2412 a3$2 LA|vss LA|vss rhigh w=1u l=13.5u ps=0u b=0 m=1
+R$2413 LA|vss a1$2 LA|vss rhigh w=1u l=44.8u ps=0u b=0 m=1
+R$2414 a4$3 LA|vss LA|vss rhigh w=1u l=13.5u ps=0u b=0 m=1
+R$2415 a3$3 LA|vss LA|vss rhigh w=1u l=13.5u ps=0u b=0 m=1
+R$2420 a1$3 LA|vss LA|vss rhigh w=1u l=44.8u ps=0u b=0 m=1
+R$2421 a4$2 LA|vdd$1 LA|vss rhigh w=1u l=15.71u ps=0u b=0 m=1
+R$2422 a3$2 LA|vdd$1 LA|vss rhigh w=1u l=15.71u ps=0u b=0 m=1
+R$2423 a2$2 LA|vdd$1 LA|vss rhigh w=1u l=14.21u ps=0u b=0 m=1
+R$2424 a1$2 LA|vdd$1 LA|vss rhigh w=1u l=14.21u ps=0u b=0 m=1
+R$2425 a4$3 LA|vdd$1 LA|vss rhigh w=1u l=15.71u ps=0u b=0 m=1
+R$2426 a3$3 LA|vdd$1 LA|vss rhigh w=1u l=15.71u ps=0u b=0 m=1
+R$2427 a2$3 LA|vdd$1 LA|vss rhigh w=1u l=14.21u ps=0u b=0 m=1
+R$2428 a1$3 LA|vdd$1 LA|vss rhigh w=1u l=14.21u ps=0u b=0 m=1
+R$2429 LA|n4$1 bias$1 LA|vss rhigh w=1u l=10u ps=0u b=0 m=1
+R$2430 bias$1 LA|vdd$1 LA|vss rhigh w=1u l=7u ps=0u b=0 m=1
+R$2431 \$716703 LA|vdd$1 LA|vss rhigh w=1u l=5u ps=0u b=0 m=1
+R$2432 \$716705 LA|vdd$1 LA|vss rhigh w=1u l=5u ps=0u b=0 m=1
+C$2433 out|out_buff out cap_cmim w=50u l=50u A=2500p P=200u m=2
+C$2435 inn|iout_n inn_b$1 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2437 inp|iout_p inp_b$1 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2439 inn|qout_n inn_b cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2441 inp|qout_p inp_b cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2443 inn|iout_n inn_a$1 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2445 inp|iout_p inp_a$1 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2447 inn|qout_n inn_a cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2449 inp|qout_p inp_a cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2467 out|out_buff$1 out|vmps_out cap_cmim w=50u l=50u A=2500p P=200u m=2
+C$2469 inn|iout_n$1 inn_b$3 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2471 inp|iout_p$1 inp_b$3 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2473 inn|qout_n$1 inn_b$2 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2475 inp|qout_p$1 inp_b$2 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2477 inn|iout_n$1 inn_a$3 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2479 inp|iout_p$1 inp_a$3 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2481 inn|qout_n$1 inn_a$2 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2483 inp|qout_p$1 inp_a$2 cap_cmim w=46.85u l=46.85u A=2194.9225p P=187.4u m=4
+C$2501 LB|n1 inp|out$2 LA|vss rfcmim w=58u l=59u A=3422p P=234u m=1 wfeed=3u
+C$2502 inp|out$4 inn|qout_n$1 LA|vss rfcmim w=12.99u l=12.99u A=168.7401p
++ P=51.96u m=1 wfeed=3u
+C$2503 inp|out$1 inn|qout_n LA|vss rfcmim w=12.99u l=12.99u A=168.7401p
++ P=51.96u m=1 wfeed=3u
+C$2504 inn|out inn|iout_n LA|vss rfcmim w=12.99u l=12.99u A=168.7401p P=51.96u
++ m=1 wfeed=3u
+C$2505 inn|out$1 inp|qout_p$1 LA|vss rfcmim w=12.99u l=12.99u A=168.7401p
++ P=51.96u m=1 wfeed=3u
+C$2506 inp|out$4 inp|iout_p$1 LA|vss rfcmim w=12.99u l=12.99u A=168.7401p
++ P=51.96u m=1 wfeed=3u
+C$2507 inn|out inp|qout_p LA|vss rfcmim w=12.99u l=12.99u A=168.7401p P=51.96u
++ m=1 wfeed=3u
+C$2508 LB|n1$1 lna_out|out LA|vss rfcmim w=58u l=59u A=3422p P=234u m=1 wfeed=3u
+C$2509 inp|out$1 inp|iout_p LA|vss rfcmim w=12.99u l=12.99u A=168.7401p
++ P=51.96u m=1 wfeed=3u
+C$2510 inp LA|n4 LA|vss rfcmim w=64.6u l=62u A=4005.2p P=253.2u m=1 wfeed=3u
+C$2511 inn|out$1 inn|iout_n$1 LA|vss rfcmim w=12.99u l=12.99u A=168.7401p
++ P=51.96u m=1 wfeed=3u
+C$2512 inp|lna_inp LA|n4$1 LA|vss rfcmim w=64.6u l=62u A=4005.2p P=253.2u m=1
++ wfeed=3u
+D$2513 LA|vss LA|vdd LA|vdd diodevdd_2kv m=5
+D$2514 LA|vss LA|vdd LA|vss diodevdd_2kv m=5
+D$2516 LA|vss LA|vdd out diodevdd_2kv m=1
+D$2519 LA|vss LA|vdd ctrln|ctrlni diodevdd_2kv m=1
+D$2520 LA|vss LA|vdd ctrlp|ctrlpi diodevdd_2kv m=1
+D$2522 LA|vss LA|vdd ctrln|ctrlnq diodevdd_2kv m=1
+D$2523 LA|vss LA|vdd inp diodevdd_2kv m=1
+D$2524 LA|vss LA|vdd ctrlp|ctrlpq diodevdd_2kv m=1
+D$2529 LA|vss LA|vdd$1 LA|vdd$1 diodevdd_2kv m=4
+D$2530 LA|vss LA|vdd$1 LA|vss diodevdd_2kv m=9
+D$2532 LA|vss LA|vdd$1 out|vmps_out diodevdd_2kv m=1
+D$2534 LA|vss LA|vdd$1 ctrln|ctrlni$1 diodevdd_2kv m=1
+D$2535 LA|vss LA|vdd$1 ctrlp|ctrlpi$1 diodevdd_2kv m=1
+D$2536 LA|vss LA|vdd$1 ctrln|ctrlnq$1 diodevdd_2kv m=1
+D$2537 LA|vss LA|vdd$1 ctrlp|ctrlpq$1 diodevdd_2kv m=1
+D$2540 LA|vss LA|vdd$1 inp|vmps_inp diodevdd_2kv m=1
+D$2543 LA|vss LA|vdd$1 inp|lna_inp diodevdd_2kv m=1
+D$2546 LA|vss LA|vdd$1 lna_out|out diodevdd_2kv m=1
+D$2550 LA|vdd LA|vss LA|vdd diodevss_2kv m=5
+D$2551 LA|vdd LA|vss LA|vss diodevss_2kv m=5
+D$2553 LA|vdd LA|vss out diodevss_2kv m=1
+D$2556 LA|vdd LA|vss ctrln|ctrlni diodevss_2kv m=1
+D$2557 LA|vdd LA|vss ctrlp|ctrlpi diodevss_2kv m=1
+D$2559 LA|vdd LA|vss ctrln|ctrlnq diodevss_2kv m=1
+D$2560 LA|vdd LA|vss inp diodevss_2kv m=1
+D$2561 LA|vdd LA|vss ctrlp|ctrlpq diodevss_2kv m=1
+D$2566 LA|vdd$1 LA|vss LA|vdd$1 diodevss_2kv m=4
+D$2567 LA|vdd$1 LA|vss LA|vss diodevss_2kv m=9
+D$2569 LA|vdd$1 LA|vss out|vmps_out diodevss_2kv m=1
+D$2571 LA|vdd$1 LA|vss ctrln|ctrlni$1 diodevss_2kv m=1
+D$2572 LA|vdd$1 LA|vss ctrlp|ctrlpi$1 diodevss_2kv m=1
+D$2573 LA|vdd$1 LA|vss ctrln|ctrlnq$1 diodevss_2kv m=1
+D$2574 LA|vdd$1 LA|vss ctrlp|ctrlpq$1 diodevss_2kv m=1
+D$2577 LA|vdd$1 LA|vss inp|vmps_inp diodevss_2kv m=1
+D$2580 LA|vdd$1 LA|vss inp|lna_inp diodevss_2kv m=1
+D$2583 LA|vdd$1 LA|vss lna_out|out diodevss_2kv m=1
+D$2587 LA|vss LA|vdd$1 nmoscl_4 m=9
+D$2589 LA|vss LA|vdd nmoscl_4 m=9
+2605$2605 LA|vdd LB|n1 LA|vss inductor w=14u s=2.093u d=469.102u nr_r=4
+2606$2606 LA|n4 LB|n3 LA|vss inductor w=14u s=2.093u d=469.102u nr_r=4
+2607$2607 LA|n4$1 LB|n3$1 LA|vss inductor w=14u s=2.093u d=469.102u nr_r=4
+2608$2608 LB|n2|n9 LA|vss LA|vss inductor w=15u s=2.1u d=168.02u nr_r=2
+2609$2609 LA|vdd$1 LB|n1$1 LA|vss inductor w=14u s=2.093u d=469.102u nr_r=4
+2610$2610 LB|n2|n9$1 LA|vss LA|vss inductor w=15u s=2.1u d=168.02u nr_r=2
+R$2611 out|out_buff \$102128 ptap1 A=2.73p P=14.78u
+R$2612 n2$1 \$96813 ptap1 A=1.56p P=8.78u
+R$2613 n2 \$96811 ptap1 A=1.56p P=8.78u
+R$2614 n2$1 \$108981 ptap1 A=1.56p P=8.78u
+R$2615 n2 \$108980 ptap1 A=1.56p P=8.78u
+R$2616 \$117187 \$117189 ptap1 A=2.34p P=12.78u
+R$2617 \$117187 \$125580 ptap1 A=2.34p P=12.78u
+R$2618 n1$1 \$123202 ptap1 A=1.56p P=8.78u
+R$2619 n1 \$123201 ptap1 A=1.56p P=8.78u
+R$2620 n1$1 \$134657 ptap1 A=1.56p P=8.78u
+R$2621 n1 \$134656 ptap1 A=1.56p P=8.78u
+R$2622 inn|out \$214481 ptap1 A=2.808p P=15.18u
+R$2623 inp|out$1 \$214482 ptap1 A=2.808p P=15.18u
+R$2624 inp|out$2 \$230150 ptap1 A=2.535p P=13.78u
+R$2625 out|out_buff$1 \$602870 ptap1 A=2.73p P=14.78u
+R$2626 n2$3 \$596725 ptap1 A=1.56p P=8.78u
+R$2627 n2$2 \$596723 ptap1 A=1.56p P=8.78u
+R$2628 n2$3 \$608853 ptap1 A=1.56p P=8.78u
+R$2629 n2$2 \$608852 ptap1 A=1.56p P=8.78u
+R$2630 \$616896 \$616898 ptap1 A=2.34p P=12.78u
+R$2631 \$616896 \$625549 ptap1 A=2.34p P=12.78u
+R$2632 n1$3 \$623826 ptap1 A=1.56p P=8.78u
+R$2633 n1$2 \$624361 ptap1 A=1.56p P=8.78u
+R$2634 n1$3 \$635003 ptap1 A=1.56p P=8.78u
+R$2635 n1$2 \$635002 ptap1 A=1.56p P=8.78u
+R$2636 inn|out$1 \$714619 ptap1 A=2.808p P=15.18u
+R$2637 inp|out$4 \$714620 ptap1 A=2.808p P=15.18u
+R$2638 inp|vmps_inp \$729851 ptap1 A=2.535p P=13.78u
+M$2639 n9 LB|n3 LB|n2|n9 LA|vss sg13_lv_nmos L=0.25u W=410u AS=78.675p
++ AD=78.675p PS=446.47u PD=446.47u rfmode=1
+M$2721 LB|n1 LA|vdd n9 LA|vss sg13_lv_nmos L=0.25u W=410u AS=78.675p AD=78.675p
++ PS=446.47u PD=446.47u rfmode=1
+M$2803 bias bias LA|vss LA|vss sg13_lv_nmos L=0.25u W=5u AS=1.725p AD=1.725p
++ PS=10.69u PD=10.69u rfmode=1
+M$2804 n9$1 LB|n3$1 LB|n2|n9$1 LA|vss sg13_lv_nmos L=0.25u W=410u AS=78.675p
++ AD=78.675p PS=446.47u PD=446.47u rfmode=1
+M$2886 LB|n1$1 LA|vdd$1 n9$1 LA|vss sg13_lv_nmos L=0.25u W=410u AS=78.675p
++ AD=78.675p PS=446.47u PD=446.47u rfmode=1
+M$2968 bias$1 bias$1 LA|vss LA|vss sg13_lv_nmos L=0.25u W=5u AS=1.725p
++ AD=1.725p PS=10.69u PD=10.69u rfmode=1
+.ENDS IHP__LNA7096

@@ -1,0 +1,37 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 7 0 80 0 100 {}
+L 7 -150 0 -130 0 {}
+L 7 130 0 150 0 {}
+L 7 -110 -100 -110 -80 {}
+L 7 -90 -100 -90 -80 {}
+L 7 -70 -100 -70 -80 {}
+L 7 -50 -100 -50 -80 {}
+L 7 0 -100 0 -80 {}
+B 5 -2.5 97.5 2.5 102.5 {name=vss dir=inout}
+B 5 -152.5 -2.5 -147.5 2.5 {name=inp dir=inout}
+B 5 147.5 -2.5 152.5 2.5 {name=out dir=inout}
+B 5 -112.5 -102.5 -107.5 -97.5 {name=ctrlpi dir=inout}
+B 5 -92.5 -102.5 -87.5 -97.5 {name=ctrlni dir=inout}
+B 5 -72.5 -102.5 -67.5 -97.5 {name=ctrlpq dir=inout}
+B 5 -52.5 -102.5 -47.5 -97.5 {name=ctrlnq dir=inout}
+B 5 -2.5 -102.5 2.5 -97.5 {name=vdd dir=inout}
+P 4 5 130 -80 -130 -80 -130 80 130 80 130 -80 {}
+T {@symname} -72 -6 0 0 0.3 0.3 {}
+T {@name} 135 -92 0 0 0.2 0.2 {}
+T {vss} 4 75 1 1 0.2 0.2 {}
+T {inp} -125 4 2 1 0.2 0.2 {}
+T {out} 125 -4 0 1 0.2 0.2 {}
+T {ctrlpi} -114 -75 3 1 0.2 0.2 {}
+T {ctrlni} -94 -75 3 1 0.2 0.2 {}
+T {ctrlpq} -74 -75 3 1 0.2 0.2 {}
+T {ctrlnq} -54 -75 3 1 0.2 0.2 {}
+T {vdd} -4 -75 3 1 0.2 0.2 {}
